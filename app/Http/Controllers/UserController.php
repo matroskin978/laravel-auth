@@ -35,6 +35,12 @@ class UserController extends Controller
         return view('user.login');
     }
 
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('login');
+    }
+
     public function dashboard()
     {
         return view('user.dashboard');

@@ -9,7 +9,7 @@
     </div>
     <div>
         Didn't receive the link?
-        <form method="post" action="">
+        <form method="post" action="{{ route('verification.send') }}">
             @csrf
             <button type="submit" class="btn btn-link ps-0">Send link</button>
         </form>
